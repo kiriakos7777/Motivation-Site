@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destroy Distractions | Unlock Your Potential</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+    <style>
+        body {
+            background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+            color: #fff;
+        }
+        .hero-section {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        .glow-text {
+            text-shadow: 0 0 10px rgba(255,255,255,0.5);
+        }
+        .motivation-button {
+            transition: all 0.3s ease;
+            box-shadow: 0 0 15px rgba(0,255,255,0.5);
+        }
+        .motivation-button:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 25px rgba(0,255,255,0.8);
+        }
+        .typed-cursor {
+            color: cyan;
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-white">
+    <div class="hero-section container mx-auto px-4">
+        <div class="max-w-2xl mx-auto text-center">
+            <h1 class="text-5xl md:text-6xl font-bold mb-6 glow-text">
+                CRUSH YOUR DISTRACTIONS
+            </h1>
+            
+            <div class="text-2xl md:text-3xl mb-8 h-20">
+                <span id="motivational-text" class="text-cyan-300"></span>
+            </div>
+            
+            <div class="space-y-6">
+                <button onclick="startFocusMode()" class="motivation-button bg-cyan-500 hover:bg-cyan-600 text-white font-bold py-4 px-8 rounded-full text-xl transform transition-all duration-300 ease-in-out">
+                    ACTIVATE FOCUS MODE
+                </button>
+                
+                <div class="mt-8 bg-gray-800 bg-opacity-50 p-6 rounded-xl">
+                    <h2 class="text-2xl font-semibold mb-4">Your Distraction Destroyers</h2>
+                    <ul class="space-y-3">
+                        <li class="flex items-center">
+                            <svg class="w-6 h-6 mr-3 text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
+                            No Phone
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-6 h-6 mr-3 text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
+                            No Social Media
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-6 h-6 mr-3 text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
+                            Clear Goals
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Motivational Typing Effect
+        var typed = new Typed('#motivational-text', {
+            strings: [
+                'Your potential is limitless.',
+                'Every distraction is a choice.',
+                'Focus is your superpower.',
+                'Small steps lead to massive results.',
+                'You are stronger than your distractions.'
+            ],
+            typeSpeed: 50,
+            backSpeed: 30,
+            loop: true
+        });
+
+        function startFocusMode() {
+            alert('FOCUS MODE ACTIVATED! \n\n🔥 Eliminate Distractions 🔥\n\n1. Put away your phone\n2. Close unnecessary tabs\n3. Set a clear goal\n4. Work in focused bursts\n5. You\'ve got this!');
+            
+            // Optional: You could add more functionality here like a timer or sound
+            const focusSound = new Audio('https://www.soundjay.com/button/sounds/button-09.mp3');
+            focusSound.play();
+        }
+    </script>
+</body>
+</html>
